@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="map">Map</div>
+    <div class = floors>
+        <button class="floor" data-floor = "22.8">22.8</button>
+        <button class="floor" data-floor = "27.8">27.8</button>
+        <button class="floor" data-floor = "37.8">37.8</button>
+        <button class="floor" data-floor = "47.8">47.8</button>
+        <button class="floor" data-floor = "all">all</button>
+    </div>
+    <div class="actions">
+        <button class = 'action' id="init">
+            INIT
+        </button>
+        <button id = "cluster" class = 'action'>
+            CLUSTER
+        </button>
+        <input type="range" id="vol" name="vol" min="0" max="1500" value = "150" step="10"><span id = "range"></span>
+    </div>
+    <div class="info">
+        <div class="totalPoints">POINTS ON FLOOR</div>
+        <div class="totalClusters">CLUSTERS ON FLOOR</div>
+        <div class="totalSingleClusters">CLUSTERS WITH ONE POINT</div>
+    </div>
+    
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
